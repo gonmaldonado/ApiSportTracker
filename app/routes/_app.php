@@ -1,5 +1,3 @@
 <?php
 
-app()->get('/', function () {
-    response()->json(['message' => 'Aguante BOCA!!!']);
-});
+app()->get('/Futbol', 'FutbolController@index');

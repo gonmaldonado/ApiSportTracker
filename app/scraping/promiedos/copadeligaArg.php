@@ -1,9 +1,11 @@
 <?php
-
-include('../simple_html_dom.php');
+namespace App\scraping\promiedos;
+include(__DIR__ . '/../simple_html_dom.php');
+class CopadeLigaArg{
 
 function getTablaCopadeLigaArg ($zona)
 {
+    
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, 'https://www.promiedos.com.ar/copadeliga');
     curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
@@ -68,12 +70,12 @@ function getTablaCopadeLigaArg ($zona)
 
 
 }     
+}
     
-//ZONA A
-echo getTablaCopadeLigaArg (1);
-echo '<br><br>';
-//ZONA B
-echo getTablaCopadeLigaArg (2);
+// //ZONA A
+// echo getTablaCopadeLigaArg (1);
+// //ZONA B
+// echo getTablaCopadeLigaArg (2);
 
 
 ?>
