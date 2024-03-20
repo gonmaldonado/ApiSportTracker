@@ -1,3 +1,4 @@
 <?php
 
-app()->get('/Futbol', 'FutbolController@index');
+app()->get('/futbol/copaDeLaLigaARG', 'FutbolController@getTablas');
+app()->get('/futbol/copaDeLaLigaARG/{id}', 'FutbolController@getTabla');
