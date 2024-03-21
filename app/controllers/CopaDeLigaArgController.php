@@ -8,7 +8,7 @@ use App\scraping\promiedos\CopadeLigaArg;
  * You can initialize packages or define methods here to use
  * them across all your other controllers which extend this one.
  */
-class FutbolController extends Controller
+class CopaDeLigaArgController extends Controller
 {
     
     public function getTabla($id)
